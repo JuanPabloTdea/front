@@ -1,4 +1,4 @@
-const API_BASE_URL = import.meta.env.VITE_BACKEND_API_URL || 'http://localhost:3000/api';
+const API_BASE_URL = import.meta.env.VITE_BACKEND_API_URL;
 
 // Helper para obtener el token del localStorage
 const getToken = () => localStorage.getItem('token');
@@ -155,4 +155,5 @@ export const filesAPI = {
   },
 };
 
-export { getToken, setToken, removeToken };
+export { getToken, removeToken, setToken };
+
