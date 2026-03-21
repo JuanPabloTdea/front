@@ -1,4 +1,4 @@
-const API_BASE_URL = import.meta.env.VITE_BACKEND_API_URL || 'https://func-iajxc4x24u3aw.azurewebsites.net/api';
+const API_BASE_URL = 'https://func-iajxc4x24u3aw.azurewebsites.net/api';
 
 // Helper para obtener el token del localStorage
 const getToken = () => localStorage.getItem('token');
