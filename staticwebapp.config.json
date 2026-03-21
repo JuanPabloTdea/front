@@ -5,15 +5,15 @@
   },
   "routes": [
     {
-      "route": "/*",
-      "headers": {
-        "cache-control": "must-revalidate, max-age=3600"
-      }
-    },
-    {
       "route": "/assets/*",
       "headers": {
         "cache-control": "must-revalidate, max-age=31536000"
+      }
+    },
+    {
+      "route": "/*",
+      "headers": {
+        "cache-control": "must-revalidate, max-age=3600"
       }
     }
   ],
