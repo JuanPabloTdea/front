@@ -31,7 +31,7 @@ const FileList = ({ refreshTrigger }) => {
       setLoading(true);
       setError('');
       const data = await filesAPI.getAll();
-      setFiles(data);
+      setFiles(data.files || []);
     } catch (error) {
       console.error('Error al cargar archivos:', error);
       setError(error.message || 'Error al cargar archivos');
